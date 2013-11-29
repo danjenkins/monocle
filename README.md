@@ -25,5 +25,23 @@ http://monocle.io
 
     export TWITTER_KEY=123
     export TWITTER_SECRET=123
-
+    
     thin start
+    
+    
+###External Postgres
+
+	export DATABASE_URL=postgres://external.db.host.com:5432/db
+
+###External Memcached
+    
+	export MEMCACHE_URL=external.memcache.host.com:11211
+	export MEMCACHE_USERNAME=user
+	export MEMCACHE_PASSWORD=pass
+
+###External Redis
+
+	export REDIS_HOST=external.host.com
+	export REDIS_PORT=6379
+	export REDIS_PASSWORD=pass
+	
