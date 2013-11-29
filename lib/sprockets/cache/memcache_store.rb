@@ -11,7 +11,7 @@ module Sprockets
     #
     class MemcacheStore
       def initialize(key_prefix = 'sprockets')
-        @memcache   = Dalli::Client.new
+        @memcache   = Dalli::Client.new(ENV['MEMCACHE_URL'] || 'localhost:11211')
         @key_prefix = key_prefix
       end
 
